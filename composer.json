@@ -4,7 +4,6 @@
   "license": "WTFPL",
   "autoload": {
     "psr-4": {
-      "Sdk\\": "Sdk/",
       "App\\": "App/"
     }
   },
@@ -19,6 +18,7 @@
     "phpstan/phpstan": "*"
   },
   "require": {
+    "lopatar/php-sdkv2": "*",
     "php": ">=8.1",
     "ext-mysqli": "*",
     "ext-openssl": "*",
