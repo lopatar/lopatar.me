@@ -7,8 +7,8 @@ use App\Config;
 use App\Middleware\HtmlHeader;
 use Sdk\App;
 
-$app = new App(new Config());
-$headerMiddleware = new HtmlHeader();
+$app = new App;
+$headerMiddleware = new HtmlHeader;
 
 $app->addMiddleware($headerMiddleware);
 
