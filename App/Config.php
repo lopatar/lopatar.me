@@ -74,7 +74,7 @@ final class Config implements IConfig
 	 */
 	public function getSessionName(): string
 	{
-		return 'LINK-SHORTENER';
+		return 'ID';
 	}
 
 	/**
@@ -154,7 +154,7 @@ final class Config implements IConfig
 	 */
 	public function getCsrfTokenLifetime(): int
 	{
-		return 600;
+		return 300;
 	}
 
 	/**
@@ -164,7 +164,7 @@ final class Config implements IConfig
 	 */
 	public function isSpoofedServerHeadEnabled(): bool
 	{
-		return false;
+		return true;
 	}
 
 	/**
@@ -174,7 +174,7 @@ final class Config implements IConfig
 	 */
 	public function getSpoofedServerValue(): string
 	{
-		return 'nginx';
+		return 'gws';
 	}
 
 	/**
@@ -184,6 +184,22 @@ final class Config implements IConfig
 	 */
 	public function isCookieEncryptionEnabled(): bool
 	{
-		return false;
+		return true;
+	}
+
+	/**
+	 * Default password hashing provider hash algorithm, {@see password_algos()}
+	 */
+	public function getDefaultPasswordProviderHashAlgorithm(): string
+	{
+		return PASSWORD_DEFAULT;
+	}
+
+	/**
+	 * Default password hashing provider hash algorithm options
+	 */
+	public function getDefaultPasswordProviderHashOptions(): array
+	{
+		return ['cost' => 13];
 	}
 }
