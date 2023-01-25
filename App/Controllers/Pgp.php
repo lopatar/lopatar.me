@@ -3,11 +3,10 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use App\Models\User;
 use Sdk\Http\Request;
 use Sdk\Http\Response;
 
-final class Pgp
+final readonly class Pgp
 {
 	public static function render(Request $request, Response $response, array $args): Response
 	{

@@ -8,7 +8,7 @@ use Sdk\Http\Response;
 use Sdk\Middleware\Interfaces\IMiddleware;
 use Sdk\Render\View;
 
-class HtmlHeader implements IMiddleware
+final readonly class HtmlHeader implements IMiddleware
 {
 
 	public function execute(Request $request, Response $response, array $args): Response
