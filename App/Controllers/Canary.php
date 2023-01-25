@@ -10,10 +10,10 @@ final readonly class Canary
 {
     public static function render(Request $request, Response $response, array $args): Response
     {
-        $pgpKey = file_get_contents(__DIR__ . '/../Files/warrantCanary.txt');
+        $warrantCanary = file_get_contents(__DIR__ . '/../Files/warrantCanary.txt');
 
         $response->createView('WarrantCanary.php')
-            ?->setProperty('warrantCanary', $pgpKey)
+            ?->setProperty('warrantCanary', $warrantCanary);
 
         return $response;
     }

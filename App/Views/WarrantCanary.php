@@ -1,4 +1,4 @@
-<a href="/"><- Go back</a>
+<a href="/contact"><- Go back</a>
 <pre>
     <?= $this->getProperty('warrantCanary') ?>
 </pre>
