@@ -1,3 +1,6 @@
+<?php
+declare(strict_types=1);
+?>
 <a href="/contact"><- Go back</a>
 <h1>PGP public key</h1>
 <pre>
