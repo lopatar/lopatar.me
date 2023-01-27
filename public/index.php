@@ -16,6 +16,7 @@ $app->addMiddleware($headerMiddleware);
 $app->view('/', 'Home.html');
 $app->view('/contact', 'Contact.html');
 
+
 $app->get('/canary', 'Canary::render');
 $app->get('/pgp', 'Pgp::render');
 

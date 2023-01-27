@@ -1,4 +1,5 @@
 <a href="/contact"><- Go back</a>
+<h1>PGP public key</h1>
 <pre>
     <?= $this->getProperty('pgpKey') ?>
 </pre>
