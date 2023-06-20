@@ -17,7 +17,6 @@ $app->view('/', 'Home.html');
 $app->view('/contact', 'Contact.html');
 $app->view('/services', 'Services.html');
 
-$app->get('/canary', 'Canary::render');
 $app->get('/pgp', 'Pgp::render');
 
 $app->run();
