@@ -22,7 +22,7 @@ final readonly class Pgp
 
     public static function renderRaw(Request $request, Response $response, array $args): Response
     {
-        return $response->write(
-            file_get_contents(__DIR__ . '/../Files/pgpKey.asc'));
+        return $response->write(file_get_contents(__DIR__ . '/../Files/pgpKey.asc'))
+            ->addHeader('Content-Type', 'text/plain');
     }
 }
