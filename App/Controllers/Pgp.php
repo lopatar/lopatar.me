@@ -11,7 +11,7 @@ final readonly class Pgp
 	public static function render(Request $request, Response $response, array $args): Response
 	{
 		$pgpKey = file_get_contents(__DIR__ . '/../Files/pgpKey.asc');
-		$pgpFingerprint = '774F B7AF DC6A 9AF8 46BC 6E25 BA04 A815 EB76 BE5F';
+		$pgpFingerprint = '2652 1FA5 F07D BDAC 56EF 8EF1 DC8D A68F 5A5D 9B0C';
 
 		$response->createView('Pgp.php')
 			?->setProperty('pgpKey', $pgpKey)
@@ -19,4 +19,10 @@ final readonly class Pgp
 
 		return $response;
 	}
+
+    public static function renderRaw(Request $request, Response $response, array $args): Response
+    {
+        return $response->write(
+            file_get_contents(__DIR__ . '/../Files/pgpKey.asc'));
+    }
 }

@@ -7,6 +7,7 @@ declare(strict_types=1);
     <?= $this->getProperty('pgpKey') ?>
 </pre>
 <p>Fingerprint: <b><?= $this->getProperty('pgpFingerprint') ?></b></p>
+<p><a href="/pgp/raw">Raw format</a></p>
 </body>
 <footer>
     <a href="https://github.com/lopatar/lopatar.me" target="_blank">Source code</a>
