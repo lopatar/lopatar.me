@@ -1,4 +1,4 @@
-# lopatar.me
+# lopatar.me - **redesigned**
 
 Source code of my personal site, written using own [PHP-SDKv2](https://github.com/lopatar/PHP-SDKv2)
 
