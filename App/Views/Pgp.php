@@ -23,7 +23,7 @@ use Sdk\Render\View;
 <a href="/contact" aria-label="Go back">&larr; Go back</a>
 <main>
     <h1>PGP public key</h1>
-    <pre>
+    <pre style="text-align: center">
         <?= $this->getProperty('pgpKey') ?>
     </pre>
     <p>
